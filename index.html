@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/weatherStyle.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@500&display=swap"
+        rel="stylesheet">
+
+    <title>Weather APP Vanilla</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="col-6">
+                <form id="search-form">
+                    <input type="text" class="cityQuery" placeholder="Search a city..." autocomplete="off"
+                        autofocus="on" id="search-text-input" />
+                    <button class="magnifyingGlass"><img class="magnify" src="images/search.png"></button>
+                    <!-- <input type="submit" class="citySearch" value="Search" /> -->
+                    <input type="submit" class="currentLocation" id="current-location" value="Current Location" />
+
+                </form>
+
+            </div>
+            <h1>Harare</h1>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Sunday 20:00</h2>
+                </div>
+                <div class="col-6">
+                    <img src="images/clear.png">
+                </div>
+            </div>
+            <h3>Cloudy</h3>
+            <div class="row">
+                <div class="col-6">
+                    11 C&deg | F&deg
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            Percipitation: 12%
+                        </li>
+                        <li>
+                            Humidity: 90%
+                        </li>
+                        <li>
+                            Wind: 2mph
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-2">
+                    Monday
+                </div>
+                <div class="col-2">
+                    Tuesday
+                </div>
+                <div class="col-2">
+                    Wednesday
+                </div>
+                <div class="col-2">
+                    Thursday
+                </div>
+                <div class="col-2">
+                    Friday
+                </div>
+                <div class="col-2">
+                    Saturday
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <img class="icon" src="images/clouds.png">
+                </div>
+                <div class="col-2">
+                    <img class="icon" src="images/clouds.png">
+                </div>
+                <div class="col-2">
+                    <img class="icon" src="images/drizzle.png">
+                </div>
+                <div class="col-2">
+                    <img class="icon" src="images/clear.png">
+                </div>
+                <div class="col-2">
+                    <img class="icon" src="images/clear.png">
+                </div>
+                <div class="col-2">
+                    <img class="icon" src="images/rain.png">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    25°|15°
+                </div>
+                <div class="col-2">
+                    27°|15°
+                </div>
+                <div class="col-2">
+                    28°|15°
+                </div>
+                <div class="col-2">
+                    29°|13°
+                </div>
+                <div class="col-2">
+                    31°|14°
+                </div>
+                <div class="col-2">
+                    32°15°
+                </div>
+
+                <a href="https://github.com/maktub03/vanilla-weather-app"> Open-source code</a> ,by
+                <a href="https://www.linkedin.com/in/panashe-machiridza-14b561228/"> Panashe Machiridza </a>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="src/content.js"></script>
+    </div>
+    </div>
+</body>
+
+</html>
