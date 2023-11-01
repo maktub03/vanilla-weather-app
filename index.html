@@ -9,15 +9,17 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@500&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <title>Weather APP Vanilla</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="weather-app">
+
+    <div class="weather-app">
+        <div class="row">
             <div class="col-6">
                 <form id="search-form">
                     <input type="text" class="cityQuery" placeholder="Search a city..." autocomplete="off"
@@ -29,28 +31,36 @@
                 </form>
 
             </div>
+        </div>
+        <div class="weather-app-data">
             <h1>Harare</h1>
-            <div class="row">
+            <h2>Sunday 20:00</h2>
+            </br>
+            </br>
+
+            <div class="descriptionRow">
                 <div class="col-6">
-                    <h2>Sunday 20:00</h2>
+                    <h3>Clear Skies</h3>
+                    <div class="mainTemp">
+                        26 C&deg | F&deg
+                    </div>
                 </div>
                 <div class="col-6">
-                    <img src="images/clear.png">
+                    <img class="main-weather-icon" src="images/clear.png">
                 </div>
             </div>
-            <h3>Cloudy</h3>
+
             <div class="row">
-                <div class="col-6">
-                    11 C&deg | F&deg
-                </div>
-                <div class="col-6">
-                    <ul>
+                <div class="col-12">
+                    <ul class="weather-app-details">
                         <li>
                             Percipitation: 12%
                         </li>
+                        </br>
                         <li>
                             Humidity: 90%
                         </li>
+                        </br>
                         <li>
                             Wind: 2mph
                         </li>
@@ -120,17 +130,22 @@
                 <div class="col-2">
                     32°15°
                 </div>
-
-                <a href="https://github.com/maktub03/vanilla-weather-app"> Open-source code</a> ,by
-                <a href="https://www.linkedin.com/in/panashe-machiridza-14b561228/"> Panashe Machiridza </a>
             </div>
         </div>
 
+        <footer>
+            <div class="codedBy"><a href="https://github.com/maktub03/vanilla-weather-app"> Open-source code </a>by,
+                <a href="https://www.linkedin.com/in/panashe-machiridza-14b561228/"> Panashe Machiridza </a>
+            </div>
+        </footer>
+
+    </div>
 
 
 
 
-        <script src="src/content.js"></script>
+
+    <script src="src/content.js"></script>
     </div>
     </div>
 </body>

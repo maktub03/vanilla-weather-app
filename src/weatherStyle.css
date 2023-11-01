@@ -1,0 +1,120 @@
+body {
+  background: #f3f1f9;
+  font-family: "Great Vibes", cursive !important;
+  font-family: "Quicksand", sans-serif !important;
+}
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 0 30px 50px rgba(16, 1, 5, 0.203);
+  border-radius: 15px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 50s ease infinite;
+  height: 100vh;
+  color: rgb(248, 246, 249);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cityQuery {
+  padding: 4px 60px 4px 4px;
+  font-size: 15px;
+  border-radius: 20px;
+  border-width: 0px;
+  margin: 20px 5px;
+  border-color: none;
+}
+
+.magnifyingGlass {
+  position: absolute;
+  top: 18px;
+  left: 255px;
+  border: 0;
+  outline: 0;
+  background: pink;
+  border-radius: 20px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.currentLocation {
+  position: absolute;
+  top: 18px;
+  left: 320px;
+  font-size: 19px;
+  color: rgb(76, 96, 114);
+  padding: 2px 10px;
+  background: pink;
+  border-radius: 20px;
+  border: 0;
+}
+
+.magnify {
+  width: 20px;
+  height: 25px;
+}
+
+h1 {
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  font-weight: 600 !important;
+  font-size: 60px !important;
+}
+h2 {
+  padding: 0px 0px 0px 00px;
+  margin: auto 20;
+  font-size: 20px !important;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+.descriptionRow {
+  height: 230px;
+  width: 100%;
+}
+.mainTemp {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500 !important;
+}
+.main-weather-icon {
+  height: 250px !important;
+  width: 250px !important;
+  position: absolute;
+  left: 280px;
+  top: -140px;
+  text-align: center;
+}
+.weather-app-details {
+  position: absolute;
+  top: -75px;
+  right: 105px;
+  display: list-item;
+  text-align: center;
+  line-height: 0.5;
+  list-style-type: none;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+}
+
+.codedBy {
+  padding: 75px 0px;
+  color: black;
+  font-size: 12px;
+}
