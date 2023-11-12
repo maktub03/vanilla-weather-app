@@ -102,11 +102,15 @@ h3 {
 .weather-app-details {
   position: absolute;
   top: -75px;
-  right: 105px;
+  right: 115px;
   display: list-item;
   text-align: center;
-  line-height: 0.5;
+  line-height: 0.6;
   list-style-type: none;
+  font-size: 13px;
+}
+strong {
+  font-weight: 500 !important;
 }
 .icon {
   width: 70px;
