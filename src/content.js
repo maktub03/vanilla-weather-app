@@ -10,6 +10,7 @@ function refreshWeather(response) {
   let feels = response.data.temperature.feels_like;
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
 
   console.log(response.data);
 
@@ -20,6 +21,7 @@ function refreshWeather(response) {
   feelsLikeElement.innerHTML = `${Math.round(feels)}&degC`;
   temperatureElement.innerHTML = Math.round(temperature);
   timeElement.innerHTML = formatDate(date);
+  iconElement.innerHTML = `<img  src="${response.data.condition.icon_url}" class="main-weather-icon"/>`;
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
