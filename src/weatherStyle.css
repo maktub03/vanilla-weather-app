@@ -121,7 +121,25 @@ strong {
   width: 70px;
   height: 70px;
 }
-
+.weather-forecast {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  color: white;
+  justify-content: space-between;
+}
+.weather-forecast-temp {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 35px;
+}
+.weather-forecast-temp-min {
+  opacity: 0.8;
+}
 .codedBy {
   padding: 75px 0px;
   color: black;
