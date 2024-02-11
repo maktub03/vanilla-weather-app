@@ -120,6 +120,8 @@ strong {
 .icon {
   width: 70px;
   height: 70px;
+  display: flex;
+  justify-content: space-around;
 }
 .weather-forecast {
   text-align: center;

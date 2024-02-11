@@ -63,34 +63,52 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  return days[date.getDay()];
+}
+
 function getForecast(city) {
   let apiKey = "a451t55f47d901b623eco2ef414ab86e";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
   axios(apiUrl).then(displayForecast);
 }
-function displayForecast(response) {
-  console.log(response.data);
 
-  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+function displayForecast(response) {
   let forecastHtml = "";
 
-  days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `<div class="row">
+  response.data.daily.forEach(function (day, index) {
+    if (index < 6) {
+      forecastHtml =
+        forecastHtml +
+        `<div class="row">
                 <div class="col-2">
                     <div class="weather-forecast-date">
-                        ${day}
+                        ${formatDay(day.time)}
                     </div>
-                    <img class="icon" src="images/clouds.png">
-
+                    <img class="icon" src="${day.condition.icon_url}">
                     <div class="weather-forecast-temp">
-                        <span class="weather-forecast-temp-max">25°</span> |
-                        <span class="weather-forecast-temp-min">15°</span>
+                        <span class="weather-forecast-temp-max">${Math.round(
+                          day.temperature.maximum
+                        )}°</span> |
+                        <span class="weather-forecast-temp-min">${Math.round(
+                          day.temperature.minimum
+                        )}°</span>
 
                     </div>
                 </div>
             </div>`;
+    }
   });
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
